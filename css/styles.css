@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.section {
+  background-color: #f2395a;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+}
+.heading {
+  margin-left: 20%;
+}
+.phone,
+.tablet,
+.desctop {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 13px 13px 32px 0 rgba(242, 57, 90, .3);
+  position: absolute;
+  transition: 1s;
+  transform: translateY(100%);
+}
+.section:hover .phone,
+.section:hover .tablet,
+.section:hover .desctop {
+  transform: translateY(10px) rotateY(-15deg);
+}
+.phone {
+  width: 200px;
+  height: 280px;
+  left: 5%;
+  bottom: 0;
+  background: #fff url('https://i.pinimg.com/236x/50/16/4b/50164b671a7e81d70331304c11d37c37.jpg') center no-repeat;
+  z-index: 3;
+  transition-delay: 0.2s;
+}
+.tablet {
+  width: 360px;
+  height: 380px;
+  background: #fff url('https://img.freepik.com/free-vector/lovers-couple-kissing-happy-valentine-cartoon-character-illustration_56104-392.jpg?w=360');
+  bottom: 0;
+  left: 10%;
+  z-index: 1;
+  transition-delay: 0.4s;
+  background-repeat:no-repeat;
+}
+.desctop {
+  width: 680px;
+  height: 480px;
+  background: #fff url('https://i.pinimg.com/736x/b8/d5/13/b8d513da2ea9bd39f60eb3a64886ab76.jpg');
+  bottom: 0;
+  left: 15%;
+  transition-delay: 0.6s;
+  background-repeat: no-repeat;
+}
